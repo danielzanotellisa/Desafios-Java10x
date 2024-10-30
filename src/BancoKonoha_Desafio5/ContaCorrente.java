@@ -1,6 +1,7 @@
 package BancoKonoha_Desafio5;
 
 public class ContaCorrente extends ContaBancaria{
+    final TipoConta tipoConta = TipoConta.CORRENTE;
     public ContaCorrente(double saldo) {
         super(saldo);
     }
@@ -13,6 +14,6 @@ public class ContaCorrente extends ContaBancaria{
     @Override
     public void depositar(double valor) {
         saldo += valor;
-        System.out.println("O valor de " + valor + " foi adicionado a sua conta, seu saldo atual é de " + saldo);
+        System.out.println("O valor de " + valor + " foi adicionado a sua conta do tipo " + tipoConta +", seu saldo atual é de " + saldo);
     }
 }
