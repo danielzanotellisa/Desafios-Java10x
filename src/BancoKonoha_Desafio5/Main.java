@@ -16,6 +16,6 @@ public class Main {
         Sasuke.consultarSaldo();
         banco.transferenciaEntreContas(narutoPoupanca,Naruto,50);
         narutoPoupanca.consultarSaldo();
-        Naruto.consultarSaldo();
+        Naruto.consultarSaldo();    
     }
 }
